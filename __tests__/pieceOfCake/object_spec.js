@@ -2,14 +2,16 @@ describe('for object', () => {
   it('should access property via dot or bracket', () => {
     const person = { name: 'Bob' };
 
+
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expectedName = undefined;
+    const expectedName = 'Bob';
     // --end->
 
     expect(person.name).toEqual(expectedName);
     // eslint-disable-next-line dot-notation
     expect(person['name']).toEqual(expectedName);
+
   });
 
   it('should get undefined if property is not defined', () => {
@@ -17,7 +19,8 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = {};
+    const expected = { };
+
     // --end->
 
     expect(person.whatTheHellIsThat).toEqual(expected);
