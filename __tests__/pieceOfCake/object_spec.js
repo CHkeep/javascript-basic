@@ -11,7 +11,6 @@ describe('for object', () => {
     expect(person.name).toEqual(expectedName);
     // eslint-disable-next-line dot-notation
     expect(person['name']).toEqual(expectedName);
-
   });
 
   it('should get undefined if property is not defined', () => {
